@@ -1,0 +1,44 @@
+ar                      ar data
+bliss                   Bliss data
+calcium                 Calcium data
+carinsuk                Car insurance data
+carr                    n-Pentane data
+cellular                Cellular differentiation data
+chapman                 Chapman data
+derailme                British Train Accidents.
+dialectric              Dialectric data
+forbes                  Forbes data
+fwd.combn               Generate all combinations of elements of x
+                        taken m at a time
+fwdglm                  Forward Search in Generalized Linear Models
+fwdlm                   Forward Search in Linear Regression
+fwdsco                  Forward Search Transformation in Linear
+                        Regression
+hawkins                 Hawkins' data
+kinetics                Kinetics data
+lakes                   Lakes data
+leafpine                Pine data
+lmsglm                  Forward Search in Generalized Linear Models
+mice                    Mice data
+molar                   Molar data
+mussels                 Mussels data
+ozone                   Ozone data
+plot.fwdglm             Forward Search in Generalized Linear Models
+plot.fwdlm              Forward Search in Linear Regression
+plot.fwdsco             Forward Search Transformation in Linear
+                        Regression
+poison                  Poison data
+rainfall                Rainfall data
+salinity                Salinity data
+scglm                   Goodness of Link Test in GLM
+score.s                 Score test for the Box-Cox transformation of
+                        the response
+stackloss               Stackloss data
+summary.fwdglm          Summarizing Fit of Forward Search in
+                        Generalized Linear Regression
+summary.fwdlm           Summarizing Fit of Forward Search in Linear
+                        Regression
+summary.fwdsco          Summarizing Fit of Forward Search
+                        Transformation in Linear Regression
+vaso                    Vaso data
+wool                    Wool data
