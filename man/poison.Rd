@@ -12,11 +12,7 @@ The \code{poison} data frame has 48 rows and 3 columns.
   \describe{
     \item{time}{a numeric vector}
     \item{poison}{a factor}
-    \item{treat}{a factor with levels}
-    \item{treat}{\code{A} }
-    \item{treat}{\code{B} }
-    \item{treat}{\code{C} }
-    \item{treat}{\code{D} }
+    \item{treat}{a factor with levels: \code{A}, \code{B}, \code{C}, \code{D} }
   }
 }
 \details{}

@@ -5,7 +5,7 @@
 ####
 #### R porting by Luca Scrucca (luca@stat.unipg.it)
 ####
-require(lqs)
+require(MASS)
 
 ##---------------------------------------------------------------------------##
 ## file: fwdlm.q 
