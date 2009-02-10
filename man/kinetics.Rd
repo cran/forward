@@ -1,6 +1,6 @@
 \name{kinetics}
 \alias{kinetics}
-\non_function{}
+\docType{data}
 \title{Kinetics data}
 \usage{data(kinetics)}
 \description{Kinetics data (from Becton-Dickenson)  \cr

@@ -1,6 +1,6 @@
 \name{molar}
 \alias{molar}
-\non_function{}
+\docType{data}
 \title{Molar data}
 \usage{data(molar)}
 \description{Radioactivity versus molar concentration of nifedipene \cr

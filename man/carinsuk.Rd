@@ -1,6 +1,6 @@
 \name{carinsuk}
 \alias{carinsuk}
-\non_function{}
+\docType{data}
 \title{Car insurance data}
 \usage{data(carinsuk)}
 \description{

@@ -1,6 +1,6 @@
 \name{derailme}
 \alias{derailme}
-\non_function{}
+\docType{data}
 \title{British Train Accidents.}
 \usage{data(derailme)}
 \description{

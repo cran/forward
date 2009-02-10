@@ -1,6 +1,6 @@
 \name{hawkins}
 \alias{hawkins}
-\non_function{}
+\docType{data}
 \title{Hawkins' data}
 \usage{data(hawkins)}
 \description{

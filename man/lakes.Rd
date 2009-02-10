@@ -1,6 +1,6 @@
 \name{lakes}
 \alias{lakes}
-\non_function{}
+\docType{data}
 \title{Lakes data}
 \usage{data(lakes)}
 \description{

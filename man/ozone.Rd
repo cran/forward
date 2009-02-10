@@ -1,6 +1,6 @@
 \name{ozone}
 \alias{ozone}
-\non_function{}
+\docType{data}
 \title{Ozone data}
 \usage{data(ozone)}
 \description{Ozone concentration at Upland, CA. \cr

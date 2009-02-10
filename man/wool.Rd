@@ -1,6 +1,6 @@
 \name{wool}
 \alias{wool}
-\non_function{}
+\docType{data}
 \title{Wool data}
 \usage{data(wool)}
 \description{

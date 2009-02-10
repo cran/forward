@@ -1,6 +1,6 @@
 \name{ar}
 \alias{ar}
-\non_function{}
+\docType{data}
 \title{ar data}
 \usage{data(ar)}
 \description{

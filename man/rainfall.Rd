@@ -1,6 +1,6 @@
 \name{rainfall}
 \alias{rainfall}
-\non_function{}
+\docType{data}
 \title{Rainfall data}
 \usage{data(rainfall)}
 \description{Toxoplasmosis data. \cr

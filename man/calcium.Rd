@@ -1,6 +1,6 @@
 \name{calcium}
 \alias{calcium}
-\non_function{}
+\docType{data}
 \title{Calcium data}
 \usage{data(calcium)}
 \description{

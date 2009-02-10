@@ -1,6 +1,6 @@
 \name{vaso}
 \alias{vaso}
-\non_function{}
+\docType{data}
 \title{Vaso data}
 \usage{data(vaso)}
 \description{Finney's data on vaso-contriction in the skin of the digits. \cr

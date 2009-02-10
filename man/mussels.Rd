@@ -1,6 +1,6 @@
 \name{mussels}
 \alias{mussels}
-\non_function{}
+\docType{data}
 \title{Mussels data}
 \usage{data(mussels)}
 \description{

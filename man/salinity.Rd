@@ -1,6 +1,6 @@
 \name{salinity}
 \alias{salinity}
-\non_function{}
+\docType{data}
 \title{Salinity data}
 \usage{data(salinity)}
 \description{

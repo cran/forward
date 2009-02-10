@@ -1,6 +1,6 @@
 \name{stackloss}
 \alias{stackloss}
-\non_function{}
+\docType{data}
 \title{Stackloss data}
 \usage{data(stackloss)}
 \description{Brownlee?s stack loss data. \cr

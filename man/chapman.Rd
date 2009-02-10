@@ -1,6 +1,6 @@
 \name{chapman}
 \alias{chapman}
-\non_function{}
+\docType{data}
 \title{Chapman data}
 \usage{data(chapman)}
 \description{

@@ -1,6 +1,6 @@
 \name{forbes}
 \alias{forbes}
-\non_function{}
+\docType{data}
 \title{Forbes data}
 \usage{data(forbes)}
 \description{
@@ -12,7 +12,7 @@ The \code{forbes} data frame has 17 rows and 2 columns.
   This data frame contains the following columns:
   \describe{
     \item{x}{Boiling point}
-    \item{y}{100 × log(pressure)}
+    \item{y}{100 x log(pressure)}
   }
 }
 \details{}

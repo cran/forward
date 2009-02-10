@@ -1,6 +1,6 @@
 \name{carr}
 \alias{carr}
-\non_function{}
+\docType{data}
 \title{n-Pentane data}
 \usage{data(carr)}
 \description{Reaction rate for Catalytic Isomerization of n-Pentane to

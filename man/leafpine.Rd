@@ -1,6 +1,6 @@
 \name{leafpine}
 \alias{leafpine}
-\non_function{}
+\docType{data}
 \title{Pine data}
 \usage{data(leafpine)}
 \description{

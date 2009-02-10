@@ -1,6 +1,6 @@
 \name{cellular}
 \alias{cellular}
-\non_function{}
+\docType{data}
 \title{Cellular differentiation data}
 \usage{data(cellular)}
 \description{

@@ -1,6 +1,6 @@
 \name{mice}
 \alias{mice}
-\non_function{}
+\docType{data}
 \title{Mice data}
 \usage{data(mice)}
 \description{

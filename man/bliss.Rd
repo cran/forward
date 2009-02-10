@@ -1,6 +1,6 @@
 \name{bliss}
 \alias{bliss}
-\non_function{}
+\docType{data}
 \title{Bliss data}
 \usage{data(bliss)}
 \description{
