@@ -16,8 +16,8 @@ The \code{carr} data frame has 24 rows and 4 columns.
     \item{y}{rate of disappearance of n-pentane}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.15}
-\examples{}
+%\examples{}
 \keyword{datasets}

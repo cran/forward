@@ -17,8 +17,8 @@ The \code{kinetics} data frame has 19 rows and 5 columns.
     \item{y}{initial velocity}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.12}
-\examples{}
+%\examples{}
 \keyword{datasets}

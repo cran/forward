@@ -13,8 +13,8 @@ The \code{molar} data frame has 15 rows and 2 columns.
     \item{y}{Total counts for \eqn{5 \times 10^-10} Molar NTD additive}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.1}
-\examples{}
+%\examples{}
 \keyword{datasets}

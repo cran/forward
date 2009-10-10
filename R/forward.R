@@ -27,7 +27,7 @@ function(formula, data, nsamp = "best", x = NULL, y = NULL, intercept = TRUE, na
        if (!missing(na.action))
           m$na.action <- na.action
 
-       m <- eval(m, sys.parent())
+       m <- eval(m, parent.frame())
        Terms <- attr(m, "terms")
        xvars <- as.character(attr(Terms, "variables"))
 
@@ -42,7 +42,7 @@ function(formula, data, nsamp = "best", x = NULL, y = NULL, intercept = TRUE, na
           }
        else
             xlevels <- NULL
-       y <- model.extract(m, response)
+       y <- model.response(m, "numeric")
        x <- model.matrix(Terms, m, NULL)
      }
   else 
@@ -774,7 +774,7 @@ function(formula, data, nsamp = "best", lambda = c(-1, -0.5, 0, 0.5, 1), x = NUL
      if (!missing(na.action))
         m$na.action <- na.action
 
-     m <- eval(m, sys.parent())
+     m <- eval(m, parent.frame())
 
      Terms <- attr(m, "terms")
      xvars <- as.character(attr(Terms, "variables"))
@@ -792,7 +792,7 @@ function(formula, data, nsamp = "best", lambda = c(-1, -0.5, 0, 0.5, 1), x = NUL
      else
           xlevels <- NULL
 
-     y <- model.extract(m, response)
+     y <- model.response(m, "numeric")
      x <- model.matrix(Terms, m, contrasts.arg = NULL)
   }
   else 
@@ -1508,7 +1508,7 @@ function(formula, family, data, weights, na.action, contrasts = NULL, bsb = NULL
                            family = family,  
                            control = glm.control(epsilon = epsilon,
                                                  maxit = maxit))$deviance 
-                else fit$deviance
+                else zz$deviance
               }
 
               eta <- offset + x %*% matrix(zz$coefficients, ncol = 1)

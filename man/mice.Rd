@@ -15,10 +15,10 @@ The \code{mice} data frame has 14 rows and 4 columns.
     \item{total}{Total}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust
 Diagnostic Regression Analysis}, First Edition. New York: Springer,
 Table A.21}
-\examples{}
+%\examples{}
 \keyword{datasets}

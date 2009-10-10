@@ -15,8 +15,8 @@ The \code{bliss} data frame has 8 rows and 4 columns.
     \item{y}{a numeric vector}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.20}
-\examples{}
+%\examples{}
 \keyword{datasets}

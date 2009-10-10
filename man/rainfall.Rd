@@ -14,8 +14,8 @@ The \code{rainfall} data frame has 34 rows and 3 columns.
     \item{Total}{total}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.22}
-\examples{}
+%\examples{}
 \keyword{datasets}

@@ -13,21 +13,21 @@ fwdglm(formula, family, data, weights, na.action, contrasts = NULL, bsb = NULL,
 }
 \arguments{
   \item{formula}{a symbolic description of the model to be fit. The details of the model are the same as for glm.}
-  \item{family}{a description of the error distribution and link function to be used in the model. See `family' for details.}
+  \item{family}{a description of the error distribution and link function to be used in the model. See \code{\link{family}} for details.}
   \item{data}{an optional data frame containing the variables in the model. By default the variables are taken from the environment from which the function is called.}
   \item{weights}{an optional vector of weights to be used in the fitting process.}
-  \item{na.action}{a function which indicates what should happen when the data contain `NA's. The default is set by the `na.action' setting of `options', and is `na.fail' if that is unset. The default is `na.omit'.}
-  \item{contrasts}{an optional list. See the `contrasts.arg' of `model.matrix.default'.}
-  \item{bsb}{an optional vector specifying a starting subset of observations to be used in the forward search. By default the ``best'' starting subset is chosen using the function \code{\link{lmsglm}} with control arguments provided by `nsamp'.}
+  \item{na.action}{a function which indicates what should happen when the data contain \code{NA}'s. The default is set by the \code{na.action} setting of \code{options}, and is \code{na.fail} if that is unset. The default is \code{na.omit}.}
+  \item{contrasts}{an optional list. See the \code{contrasts.arg} of \code{model.matrix.default}.}
+  \item{bsb}{an optional vector specifying a starting subset of observations to be used in the forward search. By default the \code{"best"} starting subset is chosen using the function \code{\link{lmsglm}} with control arguments provided by \code{nsamp}.}
   \item{balanced}{logical, for a binary response if \code{TRUE} the proportion of successes on the full dataset is approximately balanced during the forward search algorithm.}
   \item{maxit}{integer giving the maximal number of IWLS iterations. See \code{glm.control} for details.}
   \item{epsilon}{positive convergence tolerance epsilon. See \code{glm.control} for details.}
-  \item{nsamp}{the initial subset for the forward search in generalized linear models is found by the function \code{\link{lmsglm}}. This argument allows to control how many subsets are used in the robust fitting procedure. The choices are: the number of samples (100 by the default) or `"all"'. Note that the algorithm tries to find `nsamp' good subsets or a maximum of 2*`nsamp' subsets.}
+  \item{nsamp}{the initial subset for the forward search in generalized linear models is found by the function \code{\link{lmsglm}}. This argument allows to control how many subsets are used in the robust fitting procedure. The choices are: the number of samples (100 by the default) or \code{"all"}. Note that the algorithm tries to find \code{nsamp} good subsets or a maximum of 2*\code{nsamp} subsets.}
   \item{trace}{logical, if \code{TRUE} a message is printed for every ten iterations completed during the forward search.}
 }
-%\details{}
+%%\details{}
 \value{
-The function returns an object of class `"fwdglm"' with the following components:
+The function returns an object of class \code{"fwdglm"} with the following components:
 \item{call}{the matched call.}
 \item{Residuals}{a \eqn{(n x (n-p+1))} matrix of residuals.}
 \item{Unit}{a matrix of units added (to a maximum of 5 units) at each step.}

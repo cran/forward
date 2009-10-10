@@ -11,7 +11,7 @@ This function plots the results of a forward search analysis in generalized line
      sig.score = 1.96, plot.pf = FALSE, labels.in.plot = TRUE, \dots)
 }
 \arguments{
-  \item{x}{a `"fwdglm"' object.}
+  \item{x}{a \code{"fwdglm"} object.}
   \item{which.plots}{select which plots to draw, by default all. Each graph is addressed by an integer: 
   \enumerate{\item deviance residuals
              \item leverages
@@ -38,7 +38,7 @@ This function plots the results of a forward search analysis in generalized line
   \item{labels.in.plot}{logical, if \code{TRUE} units are labelled in the plots when required.}
   \item{...}{further arguments passed to or from other methods.}
 }
-%\details{}
+%%\details{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Chapter 6.}
 \author{Originally written for S-Plus by:
 Kjell Konis \email{kkonis@insightful.com} and Marco Riani \email{mriani@unipr.it} \cr

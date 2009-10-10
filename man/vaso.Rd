@@ -14,8 +14,8 @@ The \code{vaso} data frame has 39 rows and 3 columns.
     \item{y}{response: 0= nonoccurrence, 1= occurrence}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.23}
-\examples{}
+%\examples{}
 \keyword{datasets}

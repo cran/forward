@@ -15,8 +15,8 @@ The \code{poison} data frame has 48 rows and 3 columns.
     \item{treat}{a factor with levels: \code{A}, \code{B}, \code{C}, \code{D} }
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000), \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.8}
-\examples{}
+%\examples{}
 \keyword{datasets}

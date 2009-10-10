@@ -16,8 +16,8 @@ The \code{mussels} data frame has 82 rows and 5 columns.
     \item{M}{mass}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.9}
-\examples{}
+%\examples{}
 \keyword{datasets}

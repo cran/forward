@@ -20,8 +20,8 @@ The \code{ozone} data frame has 80 rows and 9 columns.
     \item{y}{ Ozone concentration (ppm)}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.7}
-\examples{}
+%\examples{}
 \keyword{datasets}

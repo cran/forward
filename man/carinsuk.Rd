@@ -16,8 +16,8 @@ The \code{carinsuk} data frame has 128 rows and 5 columns.
     \item{AvCost}{a numeric vector}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.16}
-\examples{}
+%\examples{}
 \keyword{datasets}

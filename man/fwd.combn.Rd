@@ -21,7 +21,7 @@ fwd.nCm(n, m, tol = 1e-08)
   \item{tol}{optional, tolerance value.}
   \item{...}{optional arguments passed to \code{fun}.}
 }
-%\details{}
+%%\details{}
 \value{Returns a vector or an array if \code{simplify = TRUE}, otherwise a list.
 }
 \references{Nijenhuis, A. and Wilf, H.S. (1978) \emph{Combinatorial 

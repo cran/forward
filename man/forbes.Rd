@@ -15,8 +15,8 @@ The \code{forbes} data frame has 17 rows and 2 columns.
     \item{y}{100 x log(pressure)}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Table A.1}
-\examples{}
+%\examples{}
 \keyword{datasets}

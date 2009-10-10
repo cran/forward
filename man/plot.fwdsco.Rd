@@ -7,7 +7,7 @@
       plot.mle = TRUE, ylim = NULL, xlim = NULL, \dots)
 }
 \arguments{
-  \item{x}{a `"fwdsco"' object.}
+  \item{x}{a \code{"fwdsco"} object.}
   \item{plot.Sco}{logical, if \code{TRUE} plots the score test statistic at each step of the forward search for each lambda value.}
   \item{plot.Lik}{logical, if \code{TRUE} plots the likelihood value at each step of the forward search for each lambda value.}
   \item{th.Sco}{numerical, a value used to draw the confidence interval on the plot of the score test statistic.}
@@ -16,8 +16,8 @@
   \item{xlim}{a two component vector for the min and max of the x axis.}
   \item{...}{further arguments passed to or from other methods.}
 }
-\details{}
-\value{}
+%\details{}
+%\value{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Chapters 2-3.}
 \author{Originally written for S-Plus by:
 Kjell Konis \email{kkonis@insightful.com} and Marco Riani \email{mriani@unipr.it} \cr

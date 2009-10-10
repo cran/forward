@@ -10,7 +10,7 @@ lambda.mle(x, y, init = c(-2, 2), tol = 1e-04)
 }
 \arguments{
   \item{x}{a matrix or data frame containing the explanatory variables.}
-  \item{y}{the response: a vector of length the number of rows of `x'.}
+  \item{y}{the response: a vector of length the number of rows of \code{x}.}
   \item{la}{the value of the lambda parameter.}
   \item{tol}{tolerance value used to check for full rank matrix.}
   \item{init}{range of values to search for MLE.}
@@ -27,7 +27,7 @@ Ported to R by Luca Scrucca \email{luca@stat.unipg.it}}
 \seealso{
 \code{\link{fwdsco}}, \code{\link{fwdlm}}, \code{\link{fwdglm}}.
 }
-%\examples{}
+%%\examples{}
 \keyword{robust}
 \keyword{regression}
 \keyword{models}

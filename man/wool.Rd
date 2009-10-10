@@ -16,8 +16,8 @@ The \code{wool} data frame has 27 rows and 4 columns.
     \item{y}{cycles to failure a numeric vector}
   }
 }
-\details{}
-\source{}
+%\details{}
+%\source{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer,  Table A.3}
-\examples{}
+%\examples{}
 \keyword{datasets}

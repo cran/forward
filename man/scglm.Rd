@@ -8,8 +8,8 @@ scglm(x, y, family, weights, beta, phi = 1, offset)
 }
 \arguments{
   \item{x}{a matrix or data frame containing the explanatory variables.}
-  \item{y}{the response: a vector of length the number of rows of `x'.}
-  \item{family}{a description of the error distribution and link function to be used in the model. See `family' for details.}
+  \item{y}{the response: a vector of length the number of rows of \code{x}.}
+  \item{family}{a description of the error distribution and link function to be used in the model. See \code{\link{family}} for details.}
   \item{weights}{an optional vector of weights to be used in the fitting process.}
   \item{beta}{a vector of coefficients estimates}
   \item{phi}{the dispersion parameter}
@@ -24,7 +24,7 @@ Ported to R by Luca Scrucca \email{luca@stat.unipg.it}}
 \seealso{
 \code{\link{fwdglm}}, \code{\link{fwdlm}}, \code{\link{score.s}}.
 }
-%\examples{}
+%%\examples{}
 \keyword{robust}
 \keyword{regression}
 \keyword{models}

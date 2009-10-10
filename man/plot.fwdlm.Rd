@@ -10,7 +10,7 @@ This function plots the results of a forward search analysis in linear regressio
      labels.in.plot = TRUE, \dots)
 }
 \arguments{
-  \item{x}{a `"fwdlm"' object.}
+  \item{x}{a \code{"fwdlm"} object.}
   \item{which.plots}{select which plots to draw, by default all. Each graph is addressed by an integer: 
   \enumerate{\item scaled residuals
              \item leverages
@@ -34,8 +34,8 @@ This function plots the results of a forward search analysis in linear regressio
   \item{labels.in.plot}{logical, if \code{TRUE} units are labelled in the plots when required.}
   \item{...}{further arguments passed to or from other methods.}
 }
-%\details{}
-\value{}
+%%\details{}
+%\value{}
 \references{Atkinson, A.C. and Riani, M. (2000),  \emph{Robust Diagnostic Regression Analysis}, First Edition. New York: Springer, Chapters 2-3.}
 \author{Originally written for S-Plus by:
 Kjell Konis \email{kkonis@insightful.com} and Marco Riani \email{mriani@unipr.it} \cr

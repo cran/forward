@@ -13,17 +13,17 @@ fwdsco(formula, data, nsamp = "best", lambda = c(-1, -0.5, 0, 0.5, 1),
 \arguments{
   \item{formula}{a symbolic description of the model to be fit. The details of the model are the same as for lm.}
   \item{data}{an optional data frame containing the variables in the model. By default the variables are taken from the environment from which the function is called.}
-  \item{nsamp}{the initial subset for the forward search in linear regression is found by fitting the regression model with the R function lmsreg (in package `\code{lqs}'). This argument allows to control how many subsets areused in the Least  Median of Squares regression. The choices are: the number of samples or `"best"' (the default) or `"exact"' or `"sample"'. For details see help(lmsreg).}
+  \item{nsamp}{the initial subset for the forward search in linear regression is found by fitting the regression model with the R function \code{\link{lmsreg}}. This argument allows to control how many subsets areused in the Least  Median of Squares regression. The choices are: the number of samples or \code{"best"} (the default) or \code{"exact"} or \code{"sample"}. For details see \code{\link{lmsreg}}.}
   \item{lambda}{a vector (or a single numerical value) of lambda values for the response transformation.}
   \item{x}{A matrix of predictors values (if no formula is provided).}
   \item{y}{A vector of response values (if no formula is provided).}
   \item{intercept}{Logical for the inclusion of the intercept (if no formula is provided).}
-  \item{na.action}{a function which indicates what should happen when the data contain `NA's. The default is set by the `na.action' setting of `options', and is `na.fail' if that is unset. The default is `na.omit'.}
+  \item{na.action}{a function which indicates what should happen when the data contain \code{NA}'s. The default is set by the \code{na.action} setting of \code{options}, and is \code{na.fail} if that is unset. The default is \code{na.omit}.}
   \item{trace}{logical, if \code{TRUE} a message is printed for every ten iterations completed during the forward search.}
 }
-%\details{}
+%%\details{}
 \value{
-The function returns an object of class `"fwdsco"' with the following components:
+The function returns an object of class\code{"fwdsco"} with the following components:
 \item{call}{the matched call.}
 \item{Likelihood}{a \eqn{((n-p+1) x n.lambda)} matrix of likelihood values.}
 \item{ScoreTest}{a \eqn{((n-p+1) x n.lambda)} matrix of score test statistic values.}
