@@ -5,8 +5,6 @@
 ####
 #### R porting by Luca Scrucca (luca@stat.unipg.it)
 ####
-require(MASS)
-
 ##---------------------------------------------------------------------------##
 ## file: fwdlm.q 
 
@@ -1395,7 +1393,7 @@ function(formula, family, data, weights, na.action, contrasts = NULL, bsb = NULL
           obsb <- offset[bsb]
        else
           obsb <- 0
-       zz <- glm.fit(x = x[bsb,], y = y[bsb], w = weights[bsb],
+       zz <- glm.fit(x = x[bsb,], y = y[bsb], weights = weights[bsb],
                      offset = obsb, family = family, 
                      control = glm.control(epsilon = epsilon, maxit = maxit))
        eta <- offset + x %*% matrix(zz$coefficients, ncol = 1)
@@ -1690,7 +1688,7 @@ function(x, y, family, weights, offset, n.samples = 100, max.samples = 200, epsi
     else
        obsb <- 0
 
-    fit <- try(glm.fit(x[bsb,], ybsb, family = family, w = weights[bsb],
+    fit <- try(glm.fit(x[bsb,], ybsb, family = family, weights = weights[bsb],
                        offset = obsb, # qr = T, 
                        control = glm.control(epsilon = epsilon, 
                                              maxit = maxit)))
@@ -1765,7 +1763,7 @@ function(x, y, family, weights, offset, n.samples = 100, max.samples = 200, epsi
      obsb <- 0
 
   fit <- glm.fit(x[bsb, ], y[bsb], family = family, 
-                 w = weights[bsb], offset = obsb,
+                 weights = weights[bsb], offset = obsb,
                  control = glm.control(epsilon = epsilon, maxit = maxit))
 
   mu <- family$linkinv(x %*% matrix(fit$coefficients, ncol = 1) + offset)

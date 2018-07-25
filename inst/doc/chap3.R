@@ -99,7 +99,7 @@ plot(mod10, 1, ylim=c(-4,4))
 
 data(salinity)
 
-mod1 <- fwdlm(y ~ x1 + x2 + x3, data=salinity, nsamp="exact")
+mod1 <- fwdlm(salinity ~ lagsalinity + trend + waterflow, data=salinity, nsamp="exact")
 plot(mod1)
 plot(mod1, 1)
 plot(mod1, 2)
@@ -107,18 +107,18 @@ plot(mod1, 2)
 mark <- rep(16, nrow(salinity)); mark[16] <- 1
 pairs(salinity, pch=mark)
 
-salinity$x3[16] <- 23.443  # correction asssuming misprint
-mod2 <- fwdlm(y ~ x1 + x2 + x3, data=salinity, nsamp="exact")
+salinity$waterflow[16] <- 23.443  # correction asssuming misprint
+mod2 <- fwdlm(salinity ~ lagsalinity + trend + waterflow, data=salinity, nsamp="exact")
 plot(mod2, 1, th.Res=1.5)
 
 par(mfrow=c(1,2))
 plot(mod2, 6, ylim=c(-40,40))
 mark <- rep(1, nrow(salinity)); mark[c(9, 15, 17)] <- 16
-plot(y ~ x1, data=salinity, pch=mark, ylab="Salinity", xlab="Lagged salinity")
-text(salinity$x1[mark==16], salinity$y[mark==16], which(mark==16), pos=4)
+plot(salinity ~ lagsalinity, data=salinity, pch=mark, ylab="Salinity", xlab="Lagged salinity")
+text(salinity$lagsalinity[mark==16], salinity$salinity[mark==16], which(mark==16), pos=4)
 par(mfrow=c(1,1))
 
-mod3 <- fwdlm(y ~ x1 + x3, data=salinity, nsamp="exact")
+mod3 <- fwdlm(salinity ~ lagsalinity + waterflow, data=salinity, nsamp="exact")
 plot(mod3, 1)
 plot(mod3, 6, ylim=c(-40,40))
 

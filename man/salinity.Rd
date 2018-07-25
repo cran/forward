@@ -9,10 +9,10 @@ The \code{salinity} data frame has 28 rows and 4 columns.
 \format{
   This data frame contains the following columns:
   \describe{
-    \item{x1}{Lagged salinity}
-    \item{x2}{Trend}
-    \item{x3}{Water flow}
-    \item{y}{Salinity}
+    \item{lagsalinity}{Lagged salinity}
+    \item{trend}{Trend}
+    \item{waterflow}{Water flow}
+    \item{salinity}{Salinity}
   }
 }
 %\details{}

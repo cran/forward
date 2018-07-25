@@ -41,7 +41,7 @@ par(mfrow=c(1,1))
 data(dialectric)
 
 library(lattice)
-trellis.device(bg="white")
+#trellis.device(bg="white")
 
 xyplot(y ~ time | as.factor(temp), 
        data = dialectric, col=1,
@@ -104,7 +104,7 @@ plot(mod2, 8)
 plot(mod2, 1, th.Res = 1)
 
 mod3.glm <- glm(y ~ log.time*temp + I(log.time^2) + I(temp^2), 
-                data = dialectric, family=Gamma(inverse), data = dialectric)
+               family=Gamma(inverse), data = dialectric)
 
 mod3 <- fwdglm(y ~ log.time*temp + I(log.time^2) + I(temp^2), 
                data = dialectric, family=Gamma(inverse),  nsamp=500)
@@ -213,7 +213,7 @@ data(derailme)
 derailme$Type <- as.factor(derailme$Type)
 
 library(lattice)
-trellis.device(bg="white")
+#trellis.device(bg="white")
 
 xyplot(log(y/TrainKm) ~ Year | Type, 
        data = derailme, col=1, layout=c(3,1), 
@@ -286,7 +286,7 @@ cellular$TNF <- as.numeric(cellular$TNF)
 cellular$IFN <- as.factor(cellular$IFN)
 
 library(lattice)
-trellis.device(bg="white")
+#trellis.device(bg="white")
 
 xyplot(y ~ log(tnf+1) | factor(log(ifn+1)), 
        data = cellular, col=1,  
@@ -443,7 +443,7 @@ summary(mod1.glm)
 anova(mod0.glm, mod1.glm, test="Chisq")
 
 # Very sensible to carefully choosen initial subset. 
-mod1 <- fwdglm(y ~ z + z2 + z3), weights=Total, data = rainfall, 
+mod1 <- fwdglm(y ~ z + z2 + z3, weights=Total, data = rainfall, 
                family=binomial(logit), nsamp="all") 
 # which takes very long, and the best starting subset obtained is
 inibsb <- c(1, 2, 3, 28)    

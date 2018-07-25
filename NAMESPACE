@@ -1,10 +1,28 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
-
 # Export all names
 exportPattern(".")
 
-# Import all packages listed as Imports or Depends
-import(
-  MASS
-)
+importFrom("graphics", "abline", "axis", "legend", "lines", "par",
+             "plot", "points", "text")
+
+importFrom("stats", "glm.control", "glm.fit", "is.empty.model",
+             "lm.fit", "median", "model.matrix", "model.offset",
+             "model.response", "model.weights", "na.omit")
+
+importFrom("MASS", "lmsreg")
+
+# S3 methods
+S3method(plot, fwdglm)
+S3method(plot, fwdlm)
+S3method(plot, fwdsco)
+
+S3method(print, fwdglm)
+S3method(print, fwdlm)
+S3method(print, fwdsco)
+
+S3method(summary, fwdglm)
+S3method(summary, fwdlm)
+S3method(summary, fwdsco)
+
+S3method(print, summary.fwdglm)
+S3method(print, summary.fwdlm)
+S3method(print, summary.fwdsco)

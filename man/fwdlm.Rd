@@ -44,9 +44,10 @@ Ported to R by Luca Scrucca \email{luca@stat.unipg.it}}
 \code{\link{summary.fwdlm}}, \code{\link{plot.fwdlm}}, \code{\link{fwdsco}}, \code{\link{fwdglm}}, \code{\link{lmsreg}}.  
 }
 \examples{
+library(MASS)
 data(forbes)
-plot(forbes, xlab="Boiling point", ylab="100 x log(pressure)")
-mod <- fwdlm(y ~ x, data=forbes)
+plot(forbes, xlab="Boiling point", ylab="Pressure)")
+mod <- fwdlm(100*log10(pres) ~ bp, data=forbes)
 summary(mod)
 \dontrun{plot(mod)}
 plot(mod, 1)

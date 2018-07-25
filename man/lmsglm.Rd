@@ -6,7 +6,8 @@
 This function computes the Least Median Square robust fit for generalized linear models using deviance residuals.}
 
 \usage{
-lmsglm(x, y, family, weights, offset, n.samples = 100, max.samples = 200, epsilon = 1e-04, maxit = 50, trace = FALSE)
+lmsglm(x, y, family, weights, offset, n.samples = 100, max.samples = 200,
+    epsilon = 1e-04, maxit = 50, trace = FALSE)
 }
 \arguments{
   \item{x}{a matrix or data frame containing the explanatory variables.}

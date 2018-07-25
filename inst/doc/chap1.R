@@ -2,9 +2,10 @@
 #   Chapter 1 
 #-----------------------------------------------------------------------------#
 
+library(MASS)
 data(forbes)
-plot(forbes, xlab="Boiling point", ylab="100 × log(pressure)")
-mod <- fwdlm(y ~ x, data=forbes)
+plot(forbes, xlab="Boiling point", ylab="Pressure")
+mod <- fwdlm(100*log10(pres) ~ bp, data=forbes)
 summary(mod)
 plot(mod)
 

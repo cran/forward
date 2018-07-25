@@ -47,11 +47,13 @@ Ported to R by Luca Scrucca \email{luca@stat.unipg.it}}
 \code{\link{fwdglm}}, \code{\link{fwdlm}}, \code{\link{fwdsco}}.  
 }
 \examples{ 
-\dontrun{data(cellular)}
-\dontrun{mod <- fwdglm(y ~ as.factor(TNF) + as.factor(IFN), data=cellular, 
-              family=poisson(log), nsamp=200)}
-\dontrun{summary(mod)}
-\dontrun{plot(mod)}
+\dontrun{
+data(cellular)
+mod <- fwdglm(y ~ as.factor(TNF) + as.factor(IFN), data=cellular, 
+              family=poisson(log), nsamp=200)
+summary(mod)
+plot(mod)
+}
 }
 \keyword{robust}
 \keyword{regression}

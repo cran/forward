@@ -9,9 +9,9 @@ The \code{leafpine} data frame has 70 rows and 3 columns.
 \format{
   This data frame contains the following columns:
   \describe{
-    \item{x1}{a numeric vector}
-    \item{x2}{a numeric vector}
-    \item{y}{a numeric vector}
+    \item{girth}{girth}
+    \item{height}{height}
+    \item{volume}{volume}
   }
 }
 %\details{}

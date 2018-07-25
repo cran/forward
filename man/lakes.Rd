@@ -9,9 +9,9 @@ The \code{lakes} data frame has 29 rows and 3 columns.
 \format{
   This data frame contains the following columns:
   \describe{
-    \item{x1}{average influent nitrogenon concentration}
-    \item{x2}{a numeric vector}
-    \item{y}{a numeric vector}
+    \item{NIN}{average influent nitrogenon concentration}
+    \item{TW}{water retention time}
+    \item{TN}{mean annual nitrogen concentration}
   }
 }
 %\details{}

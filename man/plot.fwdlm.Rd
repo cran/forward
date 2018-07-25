@@ -44,10 +44,11 @@ Ported to R by Luca Scrucca \email{luca@stat.unipg.it}}
 \code{\link{fwdlm}}, \code{\link{fwdsco}}, \code{\link{fwdglm}}.  
 }
 \examples{
-\dontrun{data(forbes)}
-\dontrun{plot(forbes)}
-\dontrun{mod <- fwdlm(Log.Pressure ~ Boiling.point, data=forbes)}
-\dontrun{summary(mod)}
+library(MASS)
+data(forbes)
+plot(forbes)
+mod <- fwdlm(100*log10(pres) ~ bp, data=forbes)
+summary(mod)
 \dontrun{plot(mod)}
 }
 \keyword{robust}

@@ -26,10 +26,12 @@ Ported to R by Luca Scrucca \email{luca@stat.unipg.it}}
 \code{\link{fwdsco}}, \code{\link{fwdlm}}, \code{\link{fwdglm}}.  
 }
 \examples{
-\dontrun{data(wool)}
-\dontrun{mod <- fwdsco(y ~ x1 + x2 + x3, data = wool)}
-\dontrun{plot(mod, plot.mle=FALSE)}
-\dontrun{plot(mod, plot.Sco=FALSE, plot.Lik=TRUE)}
+\dontrun{
+data(wool)
+mod <- fwdsco(y ~ x1 + x2 + x3, data = wool)
+plot(mod, plot.mle=FALSE)
+plot(mod, plot.Sco=FALSE, plot.Lik=TRUE)
+}
 }
 \keyword{robust}
 \keyword{regression}

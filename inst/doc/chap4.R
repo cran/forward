@@ -19,23 +19,23 @@ plot(mod2, plot.Sco=F, plot.Lik=T)
 
 # computes the score test statistic using the data ordered by a search on untransformed data
 
-mod3 <- fwdlm(y ~ x1 + x2 + x3, data = wool, nsamp="exact")
-inc <- fwd.included(mod3)
-y <- wool$y
-x <- cbind(1,wool[,1:3])
-score <- matrix(NA, length(inc), length(lambda))
-for (i in 1:length(inc))
-    for (j in 1:length(lambda))
-        score[i,j] <- score.s(x[inc[[i]],], y[inc[[i]]], lambda[j])$Score
-
-plot(0, 0, type="n", 
-     ylim=range(score, na.rm=T), xlim=c(ncol(x),nrow(x)+1), 
-     xlab="Subset Size", ylab="Score Test Statistic")
-for (j in 1:length(lambda))
-    { lines(ncol(x):nrow(x), score[,j], lty=j)
-      text(nrow(x)+1, score[nrow(score), j], lambda[j])
-    }
-abline(h=c(1,-1)*2.58, col="lightgrey")
+# mod3 <- fwdlm(y ~ x1 + x2 + x3, data = wool, nsamp="exact")
+# inc <- fwd.included(mod3)
+# y <- wool$y
+# x <- cbind(1,wool[,1:3])
+# score <- matrix(NA, length(inc), length(lambda))
+# for (i in 1:length(inc))
+#     for (j in 1:length(lambda))
+#         score[i,j] <- score.s(x[inc[[i]],], y[inc[[i]]], lambda[j])$Score
+# 
+# plot(0, 0, type="n", 
+#      ylim=range(score, na.rm=T), xlim=c(ncol(x),nrow(x)+1), 
+#      xlab="Subset Size", ylab="Score Test Statistic")
+# for (j in 1:length(lambda))
+#     { lines(ncol(x):nrow(x), score[,j], lty=j)
+#       text(nrow(x)+1, score[nrow(score), j], lambda[j])
+#     }
+# abline(h=c(1,-1)*2.58, col="lightgrey")
 
 # forward plot with 95% likelihood intervals:
 
@@ -52,34 +52,34 @@ lin.approx <- function(x,y,c)
 }
 
 # lambda = 1
-inc <- fwd.included(fwdlm(y ~ x1 + x2 + x3, data = wool, nsamp="exact"))
-mle <- matrix(NA, nrow=length(inc), 3)
-for (j in 2:length(inc))
-    { lik <- sapply(lambda, function(l, x, y, i) 
-                                    score.s(x[i,], y[i], l)$Lik, 
-                    x = x, y = y, i = inc[[j]] )
-      mle[j,] <- lin.approx(lambda, lik, max(lik) - 1/2 * qchisq(0.95,1))
-    }
-plot(ncol(x):nrow(x), mle[,2], type="l",
-     ylim=c(-1.1, 1.1), xlim=c(ncol(x),nrow(x)+1), 
-     xlab="Subset Size", ylab="MLE of lambda (response = y)")
-lines(ncol(x):nrow(x), mle[,1], lty=2)
-lines(ncol(x):nrow(x), mle[,3], lty=2)
+# inc <- fwd.included(fwdlm(y ~ x1 + x2 + x3, data = wool, nsamp="exact"))
+# mle <- matrix(NA, nrow=length(inc), 3)
+# for (j in 2:length(inc))
+#     { lik <- sapply(lambda, function(l, x, y, i) 
+#                                     score.s(x[i,], y[i], l)$Lik, 
+#                     x = x, y = y, i = inc[[j]] )
+#       mle[j,] <- lin.approx(lambda, lik, max(lik) - 1/2 * qchisq(0.95,1))
+#     }
+# plot(ncol(x):nrow(x), mle[,2], type="l",
+#      ylim=c(-1.1, 1.1), xlim=c(ncol(x),nrow(x)+1), 
+#      xlab="Subset Size", ylab="MLE of lambda (response = y)")
+# lines(ncol(x):nrow(x), mle[,1], lty=2)
+# lines(ncol(x):nrow(x), mle[,3], lty=2)
  
 # lambda = 0
-inc <- fwd.included(fwdlm(log(y) ~ x1 + x2 + x3, data = wool, nsamp="exact"))
-mle <- matrix(NA, nrow=length(inc), 3)
-for (j in 2:length(inc))
-    { lik <- sapply(lambda, function(l, x, y, i) 
-                                    score.s(x[i,], y[i], l)$Lik, 
-                    x = x, y = y, i = inc[[j]] )
-      mle[j,] <- lin.approx(lambda, lik, max(lik) - 1/2 * qchisq(0.95,1))
-    }
-plot(ncol(x):nrow(x), mle[,2], type="l",
-     ylim=c(-1.1, 1.1), xlim=c(ncol(x),nrow(x)+1), 
-     xlab="Subset Size", ylab="MLE of lambda (response = log(y) )")
-lines(ncol(x):nrow(x), mle[,1], lty=2)
-lines(ncol(x):nrow(x), mle[,3], lty=2)
+# inc <- fwd.included(fwdlm(log(y) ~ x1 + x2 + x3, data = wool, nsamp="exact"))
+# mle <- matrix(NA, nrow=length(inc), 3)
+# for (j in 2:length(inc))
+#     { lik <- sapply(lambda, function(l, x, y, i) 
+#                                     score.s(x[i,], y[i], l)$Lik, 
+#                     x = x, y = y, i = inc[[j]] )
+#       mle[j,] <- lin.approx(lambda, lik, max(lik) - 1/2 * qchisq(0.95,1))
+#     }
+# plot(ncol(x):nrow(x), mle[,2], type="l",
+#      ylim=c(-1.1, 1.1), xlim=c(ncol(x),nrow(x)+1), 
+#      xlab="Subset Size", ylab="MLE of lambda (response = log(y) )")
+# lines(ncol(x):nrow(x), mle[,1], lty=2)
+# lines(ncol(x):nrow(x), mle[,3], lty=2)
 
 #-----------------------------------------------------------------------------#
 
@@ -104,23 +104,23 @@ plot(mod2, plot.mle=F)
 # search on untransformed data
 
 mod3 <- fwdlm(time ~ poison + treat, data = poison)
-inc <- fwd.included(mod3)
-y <- poison$time
-x <- mod$x
-lambda <- seq(-1,1,by=0.5)
-score <- matrix(NA, length(inc), length(lambda))
-for (i in 1:length(inc))
-    for (j in 1:length(lambda))
-        score[i,j] <- score.s(x[inc[[i]],], y[inc[[i]]], lambda[j])$Score
-
-plot(0, 0, type="n", 
-     ylim=range(score, na.rm=T), xlim=c(ncol(x),nrow(x)+1), 
-     xlab="Subset Size", ylab="Score Test Statistic")
-for (j in 1:length(lambda))
-    { lines(ncol(x):nrow(x), score[,j], lty=j)
-      text(nrow(x)+1, score[nrow(score), j], lambda[j])
-    }
-abline(h=c(1,-1)*2.58, col="lightgrey")
+# inc <- fwd.included(mod3)
+# y <- poison$time
+# x <- mod$x
+# lambda <- seq(-1,1,by=0.5)
+# score <- matrix(NA, length(inc), length(lambda))
+# for (i in 1:length(inc))
+#     for (j in 1:length(lambda))
+#         score[i,j] <- score.s(x[inc[[i]],], y[inc[[i]]], lambda[j])$Score
+# 
+# plot(0, 0, type="n", 
+#      ylim=range(score, na.rm=T), xlim=c(ncol(x),nrow(x)+1), 
+#      xlab="Subset Size", ylab="Score Test Statistic")
+# for (j in 1:length(lambda))
+#     { lines(ncol(x):nrow(x), score[,j], lty=j)
+#       text(nrow(x)+1, score[nrow(score), j], lambda[j])
+#     }
+# abline(h=c(1,-1)*2.58, col="lightgrey")
 
 
 # Doubly modified poison data
@@ -164,7 +164,7 @@ mod4$ScoreTest[nrow(mod4$ScoreTest),]
 
 # Multiply modified poison data
 
-poison <- read.table("data/poison.txt", header=T)
+data(poison)
 poison$poison <- as.factor(poison$poison)
 
 poison$time[c(6,9,10,11)] <- c(0.14, 0.08, 0.07, 0.06)
