@@ -130,7 +130,7 @@ function(formula, data, nsamp = "best", x = NULL, y = NULL, intercept = TRUE, na
 #KR   zz <- try(lm.fit.qr(xb, yb, qr = T))
       zz <- try(lm.fit(xb, yb, method="qr"))
 
-      if (class(zz) != "try-error" && zz$qr$rank == p)
+      if (!inherits(zz,"try-error") && (zz$qr$rank == p))
       {
         residuals <- y - x %*% zz$coefficients
         if (!any(is.na(residuals)))
@@ -146,7 +146,7 @@ function(formula, data, nsamp = "best", x = NULL, y = NULL, intercept = TRUE, na
 
         h <- try(as.vector(qr.Q(zz$qr)^2 %*% array(1, c(p, 1))))
 
-        if (class(h) != "try-error")
+        if (!inherits(h,"try-error"))
            Leverage[bsb, m-p+1] <- h
 
         ### store s^2 ###
@@ -169,7 +169,7 @@ function(formula, data, nsamp = "best", x = NULL, y = NULL, intercept = TRUE, na
         else
              mmx <- solve(mAm, tol=1e-20)
         
-        if (class(mmx) != "try-error" && m > p) 
+        if (!inherits(mmx,"try-error") && (m > p))
            { 
              ### store t statistics ###
              tStatistics[m-p, ] <- zz$coefficients/(sigma * sqrt(diag(mmx)))
@@ -196,7 +196,7 @@ function(formula, data, nsamp = "best", x = NULL, y = NULL, intercept = TRUE, na
              }            
            }
 
-        if (class(mmx) != "try-error" && m < n)
+        if (!inherits(mmx,"try-error") && (m < n))
         {
           # bsb.comp = complement of bsb #used to be ncl
           bsb.comp <- setdiff(n1, bsb)
@@ -866,7 +866,7 @@ function(formula, data, nsamp = "best", lambda = c(-1, -0.5, 0, 0.5, 1), x = NUL
 
 #KR               zz <- try(lm.fit.qr(xb, yb.transf, qr=T))
               zz <- try(lm.fit(xb, yb.transf, method="qr"))
-              if (class(zz) != "try-error" && zz$qr$rank == p) 
+              if (!inherits(zz,"try-error") && (zz$qr$rank == p)) 
                  {                             
                    if (m > p+1) 
                       {
@@ -1489,7 +1489,7 @@ function(formula, family, data, weights, na.action, contrasts = NULL, bsb = NULL
                          # null.dev = T, qr = T,
                           control = glm.control(epsilon = epsilon,
                                                 maxit = maxit)))
-        if (class(zz) != "try-error" && 
+        if (!inherits(zz,"try-error") && 
             zz$qr$rank == p    && 
             !any(is.na(zz$coefficients)))
         {
@@ -1554,7 +1554,7 @@ function(formula, family, data, weights, na.action, contrasts = NULL, bsb = NULL
 
               rinv <- try(backsolve(zz$R, diag(p)))
 
-              if (class(rinv) != "try-error" && m > p)
+              if (!inherits(rinv,"try-error") && m > p)
               {
                 rowlen <- drop(((rinv^2.) %*% rep(1., p))^0.5)
                 tStatistics[m-p+1, ] <- zz$coef / rowlen %o% sqrt(dispersion)
@@ -1564,7 +1564,7 @@ function(formula, family, data, weights, na.action, contrasts = NULL, bsb = NULL
 
               xb <- xbsb * sqrt(zz$weights)
               h <- try(diag(xb %*% solve(t(xb) %*% xb, tol=1e-20) %*% t(xb)))
-              if (class(h) != "try-error")
+              if (!inherits(h,"try-error"))
                  Leverage[bsb, m - p + 1] <- h
 
               if (m > p) 
@@ -1693,7 +1693,7 @@ function(x, y, family, weights, offset, n.samples = 100, max.samples = 200, epsi
                        control = glm.control(epsilon = epsilon, 
                                              maxit = maxit)))
 
-    if (class(fit) != "try-error" && fit$qr$rank == dim(x)[2])
+    if (!inherits(fit,"try-error") && fit$qr$rank == dim(x)[2])
        {
          mu <- family$linkinv(x %*% matrix(fit$coefficients, ncol = 1) + offset)
          dev.res <- family$dev.resids(y, mu, weights)
@@ -2426,7 +2426,7 @@ function(x, y, family, weights, beta, phi=1, offset)
   CXb <- t(Xb) %*% Xb
  
   Cb <- try(solve(CXb, tol=1e-20))
-  if (!(class(Cb) != "try-error"))
+  if (inherits(Cb,"try-error"))
      return("singular")
 
   b.add <- Cb %*% t(Xb) %*% (zz * weights)
