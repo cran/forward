@@ -1,3 +1,9 @@
+Changes in forward version 1.0.6
+
+  o further fixed error due to changes in class() behaviour by replacing with inherits when appropriate
+
+  o updated e-mail
+
 Changes in forward version 1.0.5
 
   o fixed error due to changes in class() behaviour by replacing with inherits when appropriate

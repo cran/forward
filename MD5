@@ -1,5 +1,5 @@
 18810669f13b87348459e611d31ab760 *COPYING
-08d3fa852c1918d669f96d1f1ef633f2 *DESCRIPTION
+814333217b7dbc20cd8b48cfe06cbf7b *DESCRIPTION
 3dd8020b5fe7d333e587cde2e25a8ab2 *NAMESPACE
 2ec6e34b157e476fcbd305a7de9e0324 *R/forward.R
 51662681cfcc36df3a4a75c5c7576ef6 *data/ar.rda
@@ -25,7 +25,7 @@ f590b537b453c91df09b5b62b106cefc *data/rainfall.rda
 1c374575f93572b598406a7ea5dac10a *data/stackloss.rda
 0f9108d053207cac327fab0aaf189604 *data/vaso.rda
 5ddf29b39efc082b10f13238a4f54f49 *data/wool.rda
-3230432759a00354caaeb15b5fe55d48 *inst/NEWS
+1ed97167057378f7362b66f5daff1544 *inst/NEWS
 5d2f84c5cffb1541e5f323fac81b46df *inst/doc/README
 7358ea630cc824f863d0c1edef2e9e6d *inst/doc/chap1.R
 4b3a813d5f54f519840a2b38f21c93a4 *inst/doc/chap3.R
