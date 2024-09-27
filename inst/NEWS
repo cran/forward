@@ -1,5 +1,13 @@
 Changes in forward version 1.0.6
 
+  o fixed missing link direction
+
+  o fixed authors section in description
+
+  o updated e-mail
+
+Changes in forward version 1.0.6
+
   o further fixed error due to changes in class() behaviour by replacing with inherits when appropriate
 
   o updated e-mail

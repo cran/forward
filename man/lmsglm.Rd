@@ -36,7 +36,7 @@ The function returns a list with the following components:
 Kjell Konis \email{kkonis@insightful.com} and Marco Riani \email{mriani@unipr.it} \cr
 Ported to R by Luca Scrucca \email{luca@stat.unipg.it}}
 \seealso{
-\code{\link{fwdglm}}, \code{\link{fwdlm}}, \code{\link{lmsreg}}, \code{\link{fwdsco}}.
+\code{\link{fwdglm}}, \code{\link{fwdlm}}, \code{\link[MASS]{lmsreg}}, \code{\link{fwdsco}}.
 }
 %\examples{}
 \keyword{robust}

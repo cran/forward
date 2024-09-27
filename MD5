@@ -1,5 +1,5 @@
 18810669f13b87348459e611d31ab760 *COPYING
-814333217b7dbc20cd8b48cfe06cbf7b *DESCRIPTION
+1d8c9bb5eb7bbb4c14bbb16e6e5425e5 *DESCRIPTION
 3dd8020b5fe7d333e587cde2e25a8ab2 *NAMESPACE
 2ec6e34b157e476fcbd305a7de9e0324 *R/forward.R
 51662681cfcc36df3a4a75c5c7576ef6 *data/ar.rda
@@ -25,7 +25,7 @@ f590b537b453c91df09b5b62b106cefc *data/rainfall.rda
 1c374575f93572b598406a7ea5dac10a *data/stackloss.rda
 0f9108d053207cac327fab0aaf189604 *data/vaso.rda
 5ddf29b39efc082b10f13238a4f54f49 *data/wool.rda
-1ed97167057378f7362b66f5daff1544 *inst/NEWS
+ad17c6011e101f489bd778ad58cabd8f *inst/NEWS
 5d2f84c5cffb1541e5f323fac81b46df *inst/doc/README
 7358ea630cc824f863d0c1edef2e9e6d *inst/doc/chap1.R
 4b3a813d5f54f519840a2b38f21c93a4 *inst/doc/chap3.R
@@ -42,13 +42,13 @@ f9217e6507c57e057eef71ce52828f2b *man/derailme.Rd
 1b1718ea0326e265c76e3823bfc07e5d *man/dialectric.Rd
 8f02b3ece2fb6abb9f902d0ba29eb16c *man/fwd.combn.Rd
 10d76e9a4a7b7946726bcfceebb7dc2d *man/fwdglm.Rd
-9bb98aec9c87972aef6fc79fe6fb5bbd *man/fwdlm.Rd
-3531d077eb6281e65a5b6946a2b2d684 *man/fwdsco.Rd
+f105bc57133379bc4f89b0f7a6edd0db *man/fwdlm.Rd
+f6ca9aefc44a3cb3330e590ff9e9d1b2 *man/fwdsco.Rd
 ae756cbe1293160fd3b71f5585ab268d *man/hawkins.Rd
 e96e7aaf7d943083e77a9588ee711156 *man/kinetics.Rd
 2e66785decbbfe856cdf42d10fbedbf7 *man/lakes.Rd
 02626d71faa46159c89f95cedfce16d4 *man/leafpine.Rd
-b2a1c1f6c829b17e9919e29c0228b8b8 *man/lmsglm.Rd
+c83be1147f688137011d968a2456b7a4 *man/lmsglm.Rd
 401eb93cd7c2250973ca1541fd76bf1d *man/mice.Rd
 67d6b1879dee9a5341f8bdc9af9bd60e *man/molar.Rd
 5a77abf999b832215c8b3dcc389a49b5 *man/mussels.Rd
